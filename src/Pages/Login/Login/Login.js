@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useNavigate, Link } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -41,6 +42,7 @@ const Login = () => {
                 </Button>
             </Form>
             <p>New to Genius Car?<Link to='/register' className='text-danger pe-auto text-decoration-none' onClick={navigateRegister}> Please Register</Link></p>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
